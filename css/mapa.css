@@ -1,0 +1,12 @@
+/* estilos para mapa */
+.ubicacion {
+    height: 400px;
+}
+.ubicacion iframe {
+    width: 100%;
+    height: 100%;
+}
+/* deshabilitamos el zoom del mapa */
+.ubicacion .scrolloff {
+    pointer-events: none;
+}
