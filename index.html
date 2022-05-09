@@ -1,39 +1,55 @@
 <html><head>
-    <link rel="icon" href="img\favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
     <meta name="keywords" content="buenos aires, centro cultural recoleta, arte, diseño, tecnologia, digital,contemporaneo, expresion,">
     <meta name="description" content="Pagina Oficial del evento de arte y tecnologia.">
     <title>Antena Sensorial</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="fonts/bebas/stylesheet.css">
-    <link rel="stylesheet" href="php/phpmailer/">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="php/sendEmail.php">
     <link rel="stylesheet" href="css/fotorama.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-
-    awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/ESTILOS%20PING.css">
     <link rel="stylesheet" href="css/mapa.css">
     <link rel="stylesheet" href="css/styles.css">
-  </head><body background="img/fondo.jpg" class="img-responsive" style="margin: 0;">
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        	// Selectors
+        	ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+        	header: null, // Selector for fixed headers (must be a valid CSS selector)
+        
+        	// Speed & Easing
+        	speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        	offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+        	easing: 'easeInOutCubic', // Easing pattern to use
+        	customEasing: function (time) {}, // Function. Custom easing pattern
+        
+        	// Callback API
+        	before: function () {}, // Callback to run before scroll
+        	after: function () {} // Callback to run after scroll
+        });
+    </script>
+  </head><body background="img/fondo.jpg" class="img-responsive">
     <div id="fb-root"></div>
     <script>
       (function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
     </script>
+    <button class="bebas" onclick="topFunction()" id="myBtn" title="Clickea para ir al inicio">Inicio</button>
     <div class="">
       <div class="">
         <div class="row">
-          <div class="col-md-12">
-            <img src="img/logo.png" class="bounceindown center-block hidden-xs wow" width="50%">
-            <img src="img/logo.png" class="bounceindown center-block hidden-lg hidden-md hidden-sm wow" width="100%">
+          <div class="col-md-12 fondologo" id="inicio">
+            <img src="img/logo copia2.png" class="pulse center-block hidden-xs wow" width="60%">
+            <img src="img/logo copia2.png" class="pulse center-block hidden-lg hidden-md hidden-sm wow" width="100%">
           </div>
         </div>
       </div>
@@ -41,19 +57,19 @@
     <div class="hidden-xs section">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12">
-            <a class="btn btn-primary col-xs-4 col-sm-2" href="#sectores">SECTORES</a>
-            <a class="btn btn-primary col-sm-2 col-xs-4" href="#experiencia">TU EXPERIENCIA</a>
-            <a class="btn btn-primary col-xs-4 col-sm-2" href="#merchandising">MERCHANDISING</a>
-            <a class="btn btn-primary col-xs-4 col-sm-2" href="#redes">REDES SOCIALES</a>
-            <a class="btn btn-primary col-xs-4 col-sm-2" href="#tickets">TICKETS</a>
-            <a class="btn btn-primary col-xs-4 col-sm-2" href="#informacion">INFORMACIÓN</a>
+          <div class="col-xs-12 col-sm-12 ">
+            <a data-scroll="" class="btn btn-primary col-xs-4 col-sm-2 bebas" href="#sectores">SECTORES</a>
+            <a data-scroll="" class="btn btn-primary col-sm-2 col-xs-4 bebas" href="#experiencia">TU EXPERIENCIA</a>
+            <a data-scroll="" class="btn btn-primary col-xs-4 col-sm-2 bebas" href="#merchandising">MERCHANDISING</a>
+            <a data-scroll="" class="btn btn-primary col-xs-4 col-sm-2 bebas" href="#redes">REDES SOCIALES</a>
+            <a data-scroll="" class="btn btn-primary col-xs-4 col-sm-2 bebas" href="#tickets">TICKETS</a>
+            <a data-scroll="" class="btn btn-primary col-xs-4 col-sm-2 bebas" href="#informacion">INFORMACIÓN</a>
           </div>
         </div>
       </div>
     </div>
     <div class="fadein hidden-lg hidden-md hidden-sm navbar navbar-default wow" id="inicio1">
-      <div class="container">
+      <div class="container text-right">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -62,25 +78,25 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+        <div class="collapse navbar-collapse bebas" id="navbar-ex-collapse">
           <ul id="ejm2" class=" nav navbar-nav navbar-right">
             <li class="active">
-              <a href="#sectores">SECTORES</a>
+              <a data-scroll="" href="#sectores">SECTORES</a>
             </li>
             <li class="active">
-              <a href="#experiencia">TU EXPERIENCIA</a>
+              <a data-scroll="" href="#experiencia">TU EXPERIENCIA</a>
             </li>
             <li class="active">
-              <a href="#merchandising">MERCHANDISING</a>
+              <a data-scroll="" href="#merchandising">MERCHANDISING</a>
             </li>
             <li class="active">
-              <a href="#redes">REDES SOCIALES</a>
+              <a data-scroll="" href="#redes">REDES SOCIALES</a>
             </li>
             <li class="active">
-              <a href="#tickets">TICKETS</a>
+              <a data-scroll="" href="#tickets">TICKETS</a>
             </li>
             <li class="active">
-              <a href="#informacion">INFORMACIÓN</a>
+              <a data-scroll="" href="#informacion">INFORMACIÓN</a>
             </li>
           </ul>
         </div>
@@ -93,13 +109,90 @@
             <h1 class="text-center bebas textoblanco wow tada" id="sectores">SECTORES
               <br>
             </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-md-12 col-md-12">
-            <a href="#"><img src="img/submarcas.png" class="center-block img-responsive col-md-4 col-md-12 col-md-12 wow bounceinleft"></a>
-            <a href="#"><img src="img/submarcas2.png" class="center-block img-responsive col-md-4 col-md-12 col-md-12 wow bounceindown"></a>
-            <a href="#"><img src="img/submarcas3.png" class="center-block img-responsive col-md-4 col-md-12 col-md-12 wow bounceinright"></a>
+            <div class="section" style="padding-top: 0px; padding-top: 0px;">
+              <div class=" container ">
+                <div class="row modals-padding hidden-xs">
+                  <div class="col-md-4 col-sm-4">
+                    <a data-toggle="modal" data-target="#visor">
+                    <img id="myImg" src="img/submarcas.png" alt="visor" class="center-block img-responsive wow swing" data-wow-offset="100"> </a>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <a data-toggle="modal" data-target="#tacto">
+                    <img id="myImg" src="img/submarcas2.png" alt="tacto" class="center-block img-responsive wow swing" data-wow-offset="100"> </a>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <a data-toggle="modal" data-target="#pincel">
+                    <img id="myImg" src="img/submarcas3.png" alt="pincel" class="center-block img-responsive wow swing" data-wow-offset="100"> </a>
+                  </div>
+                </div>
+                <a data-toggle="modal" data-target="#visor">
+                <img id="myImg" src="img/submarcas.png" alt="visor" class="wow swing center-block img-responsive hidden-sm hidden-md hidden-lg " data-wow-offset="200" width="70%"> </a>
+                <a data-toggle="modal" data-target="#tacto">
+                <img id="myImg" src="img/submarcas2.png" alt="tacto" class="wow swing center-block img-responsive hidden-sm hidden-md hidden-lg" data-wow-offset="200" width="70%"> </a>
+                <a data-toggle="modal" data-target="#pincel">
+                <img id="myImg" src="img/submarcas3.png" alt="pincel" class="wow swing center-block img-responsive hidden-sm hidden-md hidden-lg" data-wow-offset="200" width="70%"> </a>
+              </div>
+            </div>
+            <!-- Modal 1 -->
+            <div id="visor" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <img src="img/submarcas.png" alt="" class="center-block img-responsive" width="50%">
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead text-primary">Sector especifico donde vas a poder adentrarte en el mundo del arte surrealista
+                      de una manera diferente. la realidad aumentada y el arte se unieron en
+                      un solo lugar.&nbsp;</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="bebas btn btn-primary" data-dismiss="modal">cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Modal 1 -->
+            <!-- Modal 2 -->
+            <div id="tacto" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <img src="img/submarcas2.png" alt="" class="center-block img-responsive" width="50%">
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead text-success">Sector donde vas a poder conocer el arte abstracto y realizar tus propias
+                      obras de arte digitalmente. deja volar la imaginación.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Modal 2 -->
+            <!-- Modal 2 -->
+            <div id="pincel" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <img src="img/submarcas3.png" alt="" class="center-block img-responsive" width="50%">
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead text-left text-warning">en este sector vas a poder hacer tus propias obras de arte expresando
+                      lo que se te ocurra. deja salir el artista que tenes dentro.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -111,10 +204,19 @@
             <h1 class="text-center textoblanco bebas wow tada" id="experiencia">TU EXPERIENCIA</h1>
           </div>
         </div>
-        <div class="fotorama" data-transition="crossfade" data-width="100%" data-ratio="800/600" data-minwidth="300" data-maxwidth="1200" data-minheight="300" data-maxheight="100%">
-          <img src="img/trabajando.jpg">
-          <img src="img/trabajando2.jpg">
-          <img src="img/trabajando3.jpg">
+        <div class="fotorama" data-nav="thumbs" data-transition="crossfade" data-width="100%" data-ratio="800/600" data-minwidth="300" data-maxwidth="1200" data-minheight="300" data-maxheight="100% ">
+          <a href="img/trabajando2.jpg">
+          <img src="img/trabajando2.jpg"> </a>
+          <a href="img/trabajando.gif">
+          <img src="img/trabajando.gif"> </a>
+          <a href="img/trabajando3.jpg">
+          <img src="img/trabajando3.jpg"> </a>
+          <a href="img/trabajando4.jpg">
+          <img src="img/trabajando4.jpg"> </a>
+          <a href="img/trabajando5.jpg">
+          <img src="img/trabajando5.jpg"> </a>
+          <a href="img/trabajando6.jpg">
+          <img src="img/trabajando6.jpg"> </a>
         </div>
       </div>
     </div>
@@ -125,130 +227,344 @@
             <h1 class="text-center textoblanco bebas wow tada" id="merchandising">MERCHANDISING</h1>
           </div>
         </div>
-        <div class="section">
+        <div class="hidden-xs section bebas">
           <div class="col-md-4 col-sm-6 col-xs-12 container hidden-sm hidden-xs">
-            <img src="img/merch1.png" class="img-responsive">
-            <a class="btn btn-primary col-xs-12 hidden-xs">REMERAS FORMALES</a>
+            <img src="img/merch3.png" class="img-responsive" data-toggle="modal" data-target="#modal2">
+            <a class=" btn btn-primary col-xs-12 hidden-xs" data-toggle="modal" data-target="#modal2" id="remeraformal">MERCHANDISING PARA ACOMPAÑAR</a>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 container hidden-sm hidden-xs">
-            <img src="img/merch3.png" class="img-responsive">
-            <a class="btn btn-primary col-xs-12 ">REMERAS MUSCULOSAS</a>
+            <img src="img/merch1.png" class="img-responsive" data-toggle="modal" data-target="#modal1">
+            <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal1">REMERAS MUJER</a>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 container hidden-sm hidden-xs">
-            <img src="img/merch4.png" class="img-responsive">
-            <a class="btn btn-primary col-xs-12">REMERAS CASUAL</a>
+            <img src="img/merch4.png" class="img-responsive" data-toggle="modal" data-target="#modal3">
+            <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal3">REMERAS HOMBRE</a>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 container hidden-sm hidden-xs">
-            <img src="img/merch6.png" class="img-responsive">
-            <a class="btn btn-primary col-xs-12">MOCHILAS</a>
+            <img src="img/merch6.png" class="img-responsive" data-toggle="modal" data-target="#modal4">
+            <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal4">MOCHILAS</a>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 container hidden-sm hidden-xs">
-            <img src="img/merch5.png" class="img-responsive">
-            <a class="btn btn-primary col-xs-12">FUNDAS PARA CELULAR</a>
+            <img src="img/merch5.png" class="img-responsive" data-toggle="modal" data-target="#modal5">
+            <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal5">FUNDAS PARA CELULAR</a>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 container hidden-sm hidden-xs">
-            <img src="img/merch7.png" class="img-responsive">
-            <a class="btn btn-primary col-xs-12">PARLANTES<br></a>
+            <img src="img/merch7.png" class="img-responsive" data-toggle="modal" data-target="#modal6">
+            <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal6">PARLANTES
+            <br> </a>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 container hidden-sm hidden-xs">
-            <img src="img/merch2.png" class="img-responsive">
-            <a class="btn btn-primary col-xs-12">TAZAS</a>
+            <img src="img/merch2.png" class="img-responsive" data-toggle="modal" data-target="#modal7">
+            <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal7">TAZAS</a>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 container hidden-sm hidden-xs">
-            <img src="img/merch8.png" class="img-responsive">
-            <a class="btn btn-primary col-xs-12">GORRAS</a>
+            <img src="img/merch8.png" class="img-responsive" data-toggle="modal" data-target="#modal8">
+            <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal8">GORRAS</a>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 container hidden-sm hidden-xs">
-            <img src="img/merch9.png" class="img-responsive">
-            <a class="btn btn-primary col-xs-12">FUNDAS PARA TABLETS<br></a>
+            <img src="img/merch9.png" class="img-responsive" data-toggle="modal" data-target="#modal9">
+            <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal9">FUNDAS PARA TABLETS
+            <br> </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="fotorama hidden-lg hidden-md hidden-sm" data-transition="crossfade" data-width="100%" data-ratio="800/600" data-minwidth="300" data-maxwidth="1200" data-minheight="450" data-maxheight="100%">
-      <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-sm">
-        <img src="img/merch1.png" class="img-responsive">
-        <a class="btn btn-primary col-xs-12 hidden-xs">REMERAS FORMALES</a>
-        <a class="btn btn-primary col-xs-12 hidden-lg hidden-md hidden-sm">VER MÁS</a>
+    <div class="fotorama hidden-lg hidden-md hidden-sm bebas" data-transition="slide" data-width="100%" data-ratio="800/600" data-minwidth="300" data-maxwidth="1200" data-minheight="550" data-maxheight="100%">
+      <div class=" col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-sm">
+        <img src="img/merch3.png" class="img-responsive">
+        <a class="btn btn-primary col-xs-12 hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#modal2">MERCHANDISING PARA ACOMPAÑAR</a>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-sm">
-        <img src="img/merch3.png" class="img-responsive">
-        <a class="btn btn-primary col-xs-12">REMERAS MUSCULOSAS</a>
+        <img src="img/merch1.png" class="img-responsive">
+        <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal1">REMERAS MUJER</a>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-sm">
         <img src="img/merch4.png" class="img-responsive">
-        <a class="btn btn-primary col-xs-12">REMERAS CASUAL</a>
+        <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal3">REMERAS HOMBRE</a>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-sm">
         <img src="img/merch6.png" class="img-responsive">
-        <a class="btn btn-primary col-xs-12">MOCHILAS</a>
+        <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal4">MOCHILAS</a>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-sm">
         <img src="img/merch5.png" class="img-responsive">
-        <a class="btn btn-primary col-xs-12">FUNDAS PARA CELULAR</a>
+        <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal5">FUNDAS PARA CELULAR</a>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-sm">
         <img src="img/merch7.png" class="img-responsive">
-        <a class="btn btn-primary col-xs-12">PARLANTES<br></a>
+        <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal6">PARLANTES
+        <br> </a>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-sm">
         <img src="img/merch2.png" class="img-responsive">
-        <a class="btn btn-primary col-xs-12">TAZAS</a>
+        <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal7">TAZAS</a>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-sm">
         <img src="img/merch8.png" class="img-responsive">
-        <a class="btn btn-primary col-xs-12">GORRAS</a>
+        <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal8">GORRAS</a>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-sm">
         <img src="img/merch9.png" class="img-responsive">
-        <a class="btn btn-primary col-xs-12">FUNDAS PARA TABLETS<br></a>
+        <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal9">FUNDAS PARA TABLETS
+        <br> </a>
       </div>
     </div>
-    <div class="fotorama hidden-lg hidden-md hidden-xs" data-transition="crossfade" data-width="100%" data-ratio="800/600" data-minwidth="300" data-maxwidth="1200" data-minheight="450" data-maxheight="100%">
+    <div class="fotorama hidden-lg hidden-md hidden-xs" data-transition="slide" data-width="100%" data-ratio="800/600" data-minwidth="300" data-maxwidth="1200" data-minheight="450" data-maxheight="100%">
       <div>
         <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-xs">
           <img src="img/merch1.png" class="img-responsive">
-          <a class="btn btn-primary col-xs-12 hidden-xs">REMERAS FORMALES</a>
-          <a class="btn btn-primary col-xs-12 hidden-lg hidden-md hidden-xs">VER MÁS</a>
+          <a class="btn btn-primary col-xs-12 hidden-lg hidden-md hidden-xs" data-toggle="modal" data-target="#modal1">REMERAS FORMALES</a>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-xs">
           <img src="img/merch3.png" class="img-responsive">
-          <a class="btn btn-primary col-xs-12 ">REMERAS MUSCULOSAS</a>
+          <a class="btn btn-primary col-xs-12 " data-toggle="modal" data-target="#modal2">MERCHANDISING PARA ACOMPAÑAR</a>
         </div>
       </div>
       <div>
         <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-xs">
           <img src="img/merch4.png" class="img-responsive">
-          <a class="btn btn-primary col-xs-12 ">REMERAS CASUAL</a>
+          <a class="btn btn-primary col-xs-12 " data-toggle="modal" data-target="#modal3">REMERAS CASUAL</a>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-xs">
           <img src="img/merch6.png" class="img-responsive">
-          <a class="btn btn-primary col-xs-12">MOCHILAS</a>
+          <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal4">MOCHILAS</a>
         </div>
       </div>
       <div>
         <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-xs">
           <img src="img/merch5.png" class="img-responsive">
-          <a class="btn btn-primary col-xs-12">FUNDAS PARA CELULAR</a>
+          <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal5">FUNDAS PARA CELULAR</a>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-xs">
           <img src="img/merch7.png" class="img-responsive">
-          <a class="btn btn-primary col-xs-12">PARLANTES<br></a>
+          <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal6">PARLANTES
+          <br> </a>
         </div>
       </div>
       <div>
         <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-xs">
           <img src="img/merch2.png" class="img-responsive">
-          <a class="btn btn-primary col-xs-12">TAZAS</a>
+          <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal7">TAZAS</a>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-xs">
           <img src="img/merch8.png" class="img-responsive">
-          <a class="btn btn-primary col-xs-12">GORRAS</a>
+          <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal8">GORRAS</a>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 col-xs-12 container hidden-lg hidden-md hidden-xs">
         <img src="img/merch9.png" class="img-responsive">
-        <a class="btn btn-primary col-xs-12">FUNDAS PARA TABLETS<br></a>
+        <a class="btn btn-primary col-xs-12" data-toggle="modal" data-target="#modal9">FUNDAS PARA TABLETS
+        <br> </a>
+      </div>
+    </div>
+    <div class="modal fade bebas" id="modal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 class="modal-title text-center bebas">REMERAS FORMALES</h1>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">TODA LA ONDA! LAS VAS A LLEVAR COMO UN TATUAJE&nbsp;</p>
+            <img src="img/remeras/mujer2.png" class="center-block img-responsive col-lg-6  col-sm-6" width="100%">
+            <img src="img/remeras/mujer3.png" class="center-block img-responsive col-sm-6 col-lg-6" width="100%">
+            <img src="img/remeras/mujer4.png" class="center-block img-responsive col-sm-6 col-lg-6" width="100%">
+            <img src="img/remeras/mujer5.png" class="center-block img-responsive col-sm-6 col-lg-6" width="100%">
+            <img src="img/remeras/mujer1.png" class="center-block img-responsive col-sm-6 col-lg-6 " width="100%">
+            <img src="img/remeras/mujer6.png" class="center-block img-responsive col-sm-6 col-lg-6 " width="100%">
+            <p class="lead text-center">PRECIO $350</p>
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">CERRAR</a>
+            <a class="btn btn-danger">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bebas" id="modal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 class="modal-title text-center bebas">MERCHANDISING PARA ACOMPAÑAR</h1>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">LA MEJOR DECORACIÓN TE VA A ACOMPAÑAR A TODOS LADOS</p>
+            <img src="img/pins/Pines2.png" class="center-block img-responsive col-lg-4 col-xs-6" width="50%">
+            <img src="img/pins/Pines1.png" class="center-block img-responsive col-lg-4 col-xs-6" width="50%">
+            <img src="img/pins/Pin pincel copia2.png" class="center-block img-responsive col-lg-4 col-xs-6" width="50%">
+            <img src="img/pins/Pin pincel copia.png" class="center-block img-responsive col-lg-4 col-xs-6" width="50%">
+            <img src="img/pins/pin2.png" class="center-block img-responsive col-lg-4 col-xs-6" width="50%">
+            <img src="img/pins/pin1.png" class="center-block img-responsive col-lg-4 col-xs-6" width="50%">
+            <img src="img/cintas/conta5.png" class="center-block img-responsive col-lg-3 col-xs-6" width="50%">
+            <img src="img/cintas/cinta2.png" class="center-block img-responsive col-lg-3 col-xs-6" width="50%">
+            <img src="img/cintas/cinta3.png" class="center-block img-responsive col-lg-3 col-xs-6" width="50%">
+            <img src="img/cintas/cinta4.png" class="center-block img-responsive col-lg-3 col-xs-6" width="50%">
+            <p class="lead text-center">PINS $50 / CINTAS $100</p>
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">CERRAR</a>
+            <a class="btn btn-danger">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bebas" id="modal3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 class="modal-title text-center bebas">REMERAS INFORMALES</h1>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">DISEÑOS EXCLUSIVOS DE REMERAS PARA TODOS LOS GUSTO</p>
+            <img src="img/remeras/remera 1 copia.png" class="center-block img-responsive col-lg-6 col-sm-6" width="100%">
+            <img src="img/remeras/remera 2.png" class="center-block img-responsive col-lg-6  col-sm-6" width="100%">
+            <img src="img/remeras/remera pincel.png" class="center-block img-responsive col-lg-6  col-sm-6" width="100%">
+            <img src="img/remeras/remera pincel2.png" class="center-block img-responsive col-lg-6  col-sm-6" width="100%">
+            <img src="img/remeras/remera tacto.png" class="center-block img-responsive col-lg-6 col-sm-6" width="100%">
+            <img src="img/remeras/remera tacto3.png" class="center-block img-responsive col-lg-6 col-sm-6" width="100%">
+            <img src="img/remeras/remera visor2.png" class="center-block img-responsive col-lg-6 col-sm-6" width="100%">
+            <img src="img/remeras/remera visor.png" class="center-block img-responsive col-lg-6 col-sm-6" width="100%">
+            <p class="lead text-center">PRECIO $350</p>
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">CERRAR</a>
+            <a class="btn btn-danger">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bebas" id="modal4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 class="modal-title text-center bebas">MOCHILAS</h1>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">A DONDE LLEVES TUS COSAS AHI VA ANTENA SENSORIAL. LA MEJOR CALIDAD&nbsp;</p>
+            <img src="img/merch6.png" class="center-block img-responsive col-lg-6  col-sm-6 col-xs-12" width="50%">
+              <img src="img/merch6.png" class="center-block img-responsive col-lg-6  col-sm-6 col-xs-12" width="50%">
+              <p class="lead text-center">PRECIO $500</p>
+              <p></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">CERRAR</a>
+            <a class="btn btn-danger">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bebas" id="modal5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 class="modal-title text-center bebas">FUNDAS PARA CELULARES</h1>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">LLEVA A ANTENA EN TUS MANOS TODO EL TIEMPO</p>
+            <img src="img/fundas/fundas visor.png" class="center-block img-responsive col-lg-4  col-sm-4" width="80%">
+            <img src="img/fundas/fundas pincel.png" class="center-block img-responsive col-lg-4 col-sm-4" width="80%">
+            <img src="img/fundas/fundas tacto.png" class="center-block img-responsive col-lg-4 col-sm-4" width="80%">
+            <p class="lead text-center">PRECIO $100 c/u</p>
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">CERRAR</a>
+            <a class="btn btn-danger">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bebas" id="modal6">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 class="modal-title text-center bebas">PARLANTES BOLITA</h1>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">PARA QUE EXPLOTE LA FIESTA, EL MEJOR SONIDO&nbsp;</p>
+            <img src="img/parlantes.png" class="center-block img-responsive" width="70%">
+            <p class="lead text-center">PRECIO $250</p>
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">CERRAR</a>
+            <a class="btn btn-danger">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bebas" id="modal7">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 class="modal-title text-center bebas">TAZAS</h1>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">INSPIRATE EN EL DESAYUNO, TAMBIEN TE ACOMPAÑAMOS EN EL MOMENTO MAS DIFICIL
+              DEL DIA.</p>
+            <img src="img/tazas/antena1.png" class="center-block img-responsive col-lg-12" width="80%">
+            <img src="img/tazas/antena2.png" class="center-block img-responsive col-sm-6 col-lg-6" width="80%">
+            <img src="img/tazas/taza2.png" class="center-block img-responsive col-sm-6 col-lg-6" width="80%">
+            <img src="img/tazas/taza1.png" class="center-block img-responsive col-sm-6 col-lg-6" width="80%">
+            <img src="img/tazas/taza3.png" class="center-block img-responsive col-sm-6 col-lg-6" width="80%">
+            <p class="lead text-center">PRECIO $250</p>
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">CERRAR</a>
+            <a class="btn btn-danger">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bebas" id="modal8">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 class="modal-title text-center bebas">GORRAS</h1>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">PARA TODOS LOS GUSTOS. QUE NO TE MATE EL SOL ESTE VERANO</p>
+            <img src="img/gorras/gorra.png" class="center-block img-responsive  col-sm-6" width="70%">
+            <img src="img/gorras/gorra2.png" class="center-block img-responsive  col-sm-6" width="70%">
+            <p class="lead text-center">PRECIO $350</p>
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">CERRAR</a>
+            <a class="btn btn-danger">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bebas" id="modal9">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 class="modal-title text-center bebas">FUNDAS PARA TABLETS</h1>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">PROTEGE TU TABLET con la mejor onda</p>
+            <img src="img/merch9.png" class="center-block img-responsive" width="80%">
+            <p class="lead text-center">PRECIO $200</p>
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" data-dismiss="modal">CERRAR</a>
+            <a class="btn btn-danger">COMPRAR</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section">
@@ -259,12 +575,16 @@
           </div>
         </div>
         <div class="row ">
-          <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-12 col-sm-12 col-xs-12 text-center">
             <div>
-              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D103761920114705%26id%3D100014426913893&amp;width=650" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="false" class="col-md-6 col-sm-12 col-xs-12"></iframe>
+              <div class="section col-md-6 col-sm-12 col-xs-12 fb-page text-center" data-href="https://www.facebook.com/Antena-Sensorial-224520207989458" charset="utf-8" data-tabs="timeline" data-width="350" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/Antena-Sensorial-224520207989458" class="fb-xfbml-parse-ignore">
+                  <a href="https://www.facebook.com/Antena-Sensorial-224520207989458">Antena Sensorial</a>
+                </blockquote>
+              </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-              <a class="twitter-timeline" data-lang="es" data-width="500" data-height="500" data-dnt="true" data-link-color="#E81C4F" href="https://twitter.com/antenasensoria1"></a>
+            <div class="col-md-6 col-sm-12 col-xs-12 section text-center">
+              <a class="twitter-timeline" data-lang="es" data-width="350" data-height="600" data-dnt="true" data-link-color="#E81C4F" href="https://twitter.com/antenasensoria1"></a>
               <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
@@ -279,18 +599,26 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <a href="http://www.ticketek.com.ar/" class="col-md-12 col-sm-6 col-xs-6" target="_blank"><img src="img/ticketek.png" class="center-block img-responsive"></a>
-            <a href="http://www.fullticket.com/" class="col-md-12 col-sm-6 col-xs-6" target="_blank"><img src="img/fullticket.png" class="center-block img-responsive"></a>
+          <div class="col-md-6 hidden-xs">
+            <a href="http://www.ticketek.com.ar/" class="col-md-12 col-sm-6 col-xs-12" target="_blank">
+            <img src="img/ticketek.png" class="center-block img-responsive" style="width:50%"> </a>
+            <a href="http://www.fullticket.com/" class="col-md-12 col-sm-6 col-xs-12" target="_blank">
+            <img src="img/fullticket.png" class="center-block img-responsive" style="width:50%"> </a>
+          </div>
+          <div class="col-md-6 hidden-lg hidden-md hidden-sm">
+            <a href="http://www.ticketek.com.ar/" class="col-md-12 col-sm-6 col-xs-12" target="_blank">
+            <img src="img/ticketek.png" class="center-block img-responsive"> </a>
+            <a href="http://www.fullticket.com/" class="col-md-12 col-sm-6 col-xs-12" target="_blank">
+            <img src="img/fullticket.png" class="center-block img-responsive"> </a>
           </div>
           <div class="section col-md-6 textoblanco">
-            <p class="lead text-center">ENCONTRA TUS TICKETS CON DESCUENTO DE MANERA DIGITAL CON UN 20% DE DESCUENTO</p>
-            <p class="text-center">ENTRADA GENERAL: $250
-              <br>MENORES DE 15 AÑOS: $100
-              <br>MAYORES DE 60: $100
+            <p class="text-center">ENCONTRA TUS TICKETS CON DESCUENTO DE MANERA DIGITAL CON UN 20% DE DESCUENTO</p>
+            <p class="text-center" contenteditable="true">ENTRADA GENERAL: $350
+              <br>MENORES DE 15 AÑOS: $150
+              <br>MAYORES DE 60: $50
               <br>
               </p>
-              <p class="lead text-center">Consulta por promociones de 2x1 de CLUB LA NACION Y CLARIN 365&nbsp;</p>
+              <p class="text-center">Consulta por promociones de 2x1 de CLUB LA NACION Y CLARIN 365&nbsp;</p>
           </div>
         </div>
       </div>
@@ -307,35 +635,35 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
           <section class=" col-md-4 col-sm-12 col-xs-12">
             <div id="ubicacion" class="ubicacion">
-              <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.797903485154!2d-58.3917519!3d-34.58647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a52ca8190703ddc!2sCentro+Cultural+Recoleta!5e0!3m2!1ses-419!2sar!4v1480135284584" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.797903485154!2d-58.3917519!3d-34.58647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a52ca8190703ddc!2sCentro+Cultural+Recoleta!5e0!3m2!1ses-419!2sar!4v1480135284584" width="400" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
             </div>
           </section>
           <!-- sección con el formulario de contacto -->
           <div id="contacto" class="contacto">
-            <p class="section center-block col-md-4 col-sm-12 col-xs-12 lead text-center text-warning textoblanco">Junin 1930, Ciudad Autónoma de Buenos Aires info.ccr@buenosaires.gob.ar
+            <p class="lato center-block col-md-4 col-sm-12 col-xs-12 section text-center text-warning textoblanco">Junin 1930, Ciudad Autónoma de Buenos Aires info.ccr@buenosaires.gob.ar
               4803-1040
               <br>HORARIOS DE ATENCIÓN Martes de 13.30 a 20.30 h Miércoles a viernes de
               13.30 a 22 h Sábados, domingos y feriados de 11.30 a 22 h</p>
             <div id="contacto" data-anchor="contacto">
-              <div class="container">
+              <div class="container lato">
                 <div class="row">
                   <form class="col-xs-12 col-sm-12 col-md-4" id="this-is-my-form" autocomplete="on" action="php/sendEmail.php" method="POST">
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label for="recipient-name" class="control-label">Nombre:</label>
+                        <label for="recipient-name" class="control-label textoblanco">Nombre:</label>
                         <input type="text" class="form-control" placeholder="Juan Pedro" name="nombre" autocomplete="" pattern="[A-Za-z-0-9]+">
                       </div>
                       <div class="form-group">
-                        <label for="recipient-name" class="control-label">E-mail:</label>
+                        <label for="recipient-name" class="control-label textoblanco">E-mail:</label>
                         <input type="email" class="form-control" placeholder="juanpedro@dominio.com" aria-required="true" autocomplete="email" name="email">
                       </div>
                       <div class="form-group">
-                        <label for="recipient-name" class="control-label">Teléfono:</label>
+                        <label for="recipient-name" class="control-label textoblanco">Teléfono:</label>
                         <input type="text" class="form-control" placeholder="011 15 4493 0023" aria-required="true" name="telefono">
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="form-group">
+                      <div class="form-group textoblanco">
                         <label for="sel1">Zona:</label>
                         <select class="form-control" id="sel1" aria-required="true" name="zona">
                           <option value="Capital Federal">Capital Federal</option>
@@ -345,10 +673,10 @@
                         </select>
                       </div>
                       <div class="form-group">
-                        <label for="message-text" class="control-label">Comentarios:</label>
+                        <label for="message-text" class="control-label textoblanco">Comentarios:</label>
                         <textarea class="form-control" id="message-text" name="mensaje"></textarea>
                       </div>
-                      <input class="btn btn-info btn-block enviar-btn" type="submit" value="Enviar">
+                      <input class="btn btn-block btn-danger enviar-btn bebas alert" type="submit" value="Enviar">
                     </div>
                   </form>
                   <!-- ver como hacer la respuesta si con modal o ke-->
@@ -361,35 +689,42 @@
         </div>
       </div>
     </div>
+    <div class="col-sm-12 col-md-12">
+      <div class="row">
+        <div class="col-md-12 hidden-lg hidden-md hidden-sm text-center">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100014426913893&amp;lst=100006056618832%3A100014426913893%3A1481132872&amp;sk=about" target="_blank"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-3x fa-fw hub text-inverse fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hidden-xs text-center">
+          <a href="https://www.instagram.com" target="_blank"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+          <a href="https://twitter.com/antenasensoria1" target="_blank"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100014426913893&amp;lst=100006056618832%3A100014426913893%3A1481132872&amp;sk=about"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-3x fa-fw hub text-inverse fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
     <footer class="section col-lg-12 textoblanco">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-sm-12">
-            <img src="img/logoccr.png" class="center-block col-sm-3 col-xs-6 img-responsive col-md-4">
-            <img src="img/logo-ba-light.png" class="center-block col-sm-6  col-md-5 col-xs-6 img-responsive">
-            <p class="col-sm-3 col-md-5 section text-center">2016 &nbsp;Todos los derechos reservados.</p>
+          <div class="col-md-9 col-sm-12">
+            <a href="http://www.centroculturalrecoleta.org/" target="_blank">
+            <img src="img/logoccr.png" class="col-md-4 col-sm-3 col-sm-offset-1 col-xs-6 img-responsive"> </a>
+            <a href="http://www.buenosaires.gob.ar/" target="_blank">
+            <img src="img/logo-ba-light.png" class="col-md-6 col--offset-1 col-sm-6 col-sm-offset-1 col-xs-6 img-responsive"> </a>
           </div>
-          <div class="col-sm-12 col-md-4">
-            <p class="text-info text-right">
-              <br>
-              <br>
-            </p>
-            <div class="row">
-              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-center">
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-3x fa-fw hub text-inverse fa-youtube"></i></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 hidden-xs text-center">
-                <a href="https://www.instagram.com" target="_blank"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-3x fa-fw hub text-inverse fa-youtube"></i></a>
-              </div>
-            </div>
+          <div class="col-md-3 col-xs-12 hidden-lg hidden-md hidden-sm">
+            <h6 contenteditable="true" class="text-center">Diseñado por:</h6>
+            <a target="_blank" href="http://colorimpacto.esy.es/">
+            <img src="img/logocolor.png" class="center-block img-responsive" width="40%"> </a>
+          </div>
+          <div class="col-md-3 col-xs-12 hidden-xs">
+            <h6 contenteditable="true" class="text-center">Diseñado por:</h6>
+            <a target="_blank" href="http://colorimpacto.esy.es/">
+            <img src="img/logocolor.png" class="center-block img-responsive" width="50%"> </a>
           </div>
         </div>
       </div>
@@ -398,12 +733,11 @@
     <script>
       new WOW().init();
     </script>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fotorama.js"></script>
     <!-- script para deshabilitar el zoom en google maps -->
-       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- script para deshabilitar el zoom en google maps -->
     <script src="js/scrollMap.js"></script>
+  
+
 </body></html>

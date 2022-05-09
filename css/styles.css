@@ -37,8 +37,9 @@ height: 100%;
  .flotante {
         display: scroll;
         position: fixed;
-        bottom: 320px;
+        bottom: 450px;
         right: 0px;
+   
     }
     
     ul#ejm2 li a {
@@ -120,3 +121,25 @@ height: 100%;
         -webkit-transform: scale(1.5);
         transform: scale(1.1);
     }
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #332c53; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 6px 12px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    
+}
+
+#myBtn:hover {
+     background-color: #201b39; /* Add a dark-grey background on hover */
+}
+
+

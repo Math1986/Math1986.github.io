@@ -107,13 +107,8 @@
 .fotorama__wrap--css3 .fotorama__stage__shaft,
 .fotorama__wrap--css3 .fotorama__thumb-border {
     transition-property: -webkit-transform, width;
-    -webkit-transition-property: width, -webkit-transform;
-    transition-property: width, -webkit-transform;
     transition-property: transform, width;
-    transition-property: transform, width, -webkit-transform;
-    -webkit-transition-timing-function: cubic-bezier(0.1, 0, .25, 1);
     transition-timing-function: cubic-bezier(0.1, 0, .25, 1);
-    -webkit-transition-duration: 0ms;
     transition-duration: 0ms
 }
 
@@ -189,7 +184,6 @@
 }
 
 @media (-webkit-min-device-pixel-ratio:1.5),
-(-webkit-min-device-pixel-ratio:2),
 (min-resolution:2dppx) {
     .fotorama__arr,
     .fotorama__fullscreen-icon,
@@ -382,7 +376,7 @@
 
 .fotorama__nav--dots .fotorama__nav__frame {
     width: 18px;
-    height: 30px
+    height: 18px
 }
 
 .fotorama__nav--dots .fotorama__nav__frame--thumb,
@@ -453,7 +447,6 @@
     left: 0;
     border-style: solid;
     border-color: #00afea;
-    background-image: -webkit-linear-gradient(top left, rgba(255, 255, 255, .25), rgba(64, 64, 64, .1));
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .25), rgba(64, 64, 64, .1))
 }
 
@@ -526,11 +519,8 @@
 
 .fotorama__wrap--css3 .fotorama__html,
 .fotorama__wrap--css3 .fotorama__stage .fotorama__img {
-    -webkit-transition-property: opacity;
     transition-property: opacity;
-    -webkit-transition-timing-function: linear;
     transition-timing-function: linear;
-    -webkit-transition-duration: .3s;
     transition-duration: .3s
 }
 
@@ -737,11 +727,7 @@
 .fotorama__wrap--css3 .fotorama__video-close:not(:focus),
 .fotorama__wrap--css3 .fotorama__video-play:not(:focus) {
     transition-property: -webkit-transform, opacity;
-    -webkit-transition-property: opacity, -webkit-transform;
-    transition-property: opacity, -webkit-transform;
     transition-property: transform, opacity;
-    transition-property: transform, opacity, -webkit-transform;
-    -webkit-transition-duration: .3s;
     transition-duration: .3s
 }
 
@@ -765,7 +751,6 @@
 
 .fotorama__nav:before,
 .fotorama__stage:before {
-    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, .2) 25%, rgba(0, 0, 0, .3) 75%, transparent), -webkit-radial-gradient(0 50%, farthest-side, rgba(0, 0, 0, .4), transparent);
     background-image: linear-gradient(transparent, rgba(0, 0, 0, .2) 25%, rgba(0, 0, 0, .3) 75%, transparent), radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, .4), transparent);
     background-position: 0 0, 0 0;
     left: -10px
@@ -778,7 +763,6 @@
 
 .fotorama__nav:after,
 .fotorama__stage:after {
-    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, .2) 25%, rgba(0, 0, 0, .3) 75%, transparent), -webkit-radial-gradient(100% 50%, farthest-side, rgba(0, 0, 0, .4), transparent);
     background-image: linear-gradient(transparent, rgba(0, 0, 0, .2) 25%, rgba(0, 0, 0, .3) 75%, transparent), radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, .4), transparent);
     background-position: 100% 0, 100% 0;
     right: -10px
